@@ -3,10 +3,32 @@
   font-weight: lighter;
 
 }
-.contact {
-  border: solid black 2px;
-  border-radius: 20px;
+.contact{
+  height: 30px;
+  background-color: initial;
+  border: 2px solid #000;
+  border-radius: 30px;
+  font-size: 15px;
   padding: 0 8px;
-  background-color: transparent;
-  font-size: 20px;
+}
+.navigationBar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+ 
+}
+.cont{
+  display: flex;
+  align-items: center;
+  gap:8px;
+  width:10%
+}
+.prop{
+  border: #000 solid 1px;
+  border-radius:19px ;
+}
+.prop img{
+  object-fit: cover;
+  border-radius: 19px;
 }
