@@ -1,0 +1,19 @@
+.top1{
+    /* background-color: black; */
+    display: flex;
+    align-items: center;
+    height: 8vh;
+    width: 100%;
+    padding: 10px 0;
+}
+.topP{
+display: flex;
+width: 50%;
+justify-content: flex-end;
+padding: 0 10px;
+}
+.form{
+    border: solid black 1px;
+    width: 50%;
+    padding: 20px;
+}
