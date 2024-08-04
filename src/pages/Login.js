@@ -1,56 +1,62 @@
-// import React, { useState, useEffect } from 'react';
-// import { useDispatch, useSelector } from 'react-redux';
-// import { login, logout } from '../redux/action';
-// import { useNavigate } from 'react-router-dom';
+import React, { useState } from "react";
+import { useAuth } from "../components/Authcontext";
+import { useNavigate } from "react-router-dom";
+import Heading from "../components/heading";
+import Contact from "../components/contact";
+import "../css/Login.css";
+import Logo from "../assests/Login in page image.png"
+const Login = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const { login } = useAuth();
+  const navigate = useNavigate();
 
-// const Login = () => {
-//   const [username, setUsername] = useState('');
-//   const [password, setPassword] = useState('');
-//   const dispatch = useDispatch();
-//   const isAuthenticated = useSelector((state) => state.isAuthenticated);
-//   const navigate = useNavigate();
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (email && password) {
+      login();
+      navigate("/home");
+    }
+  };
 
-//   const handleLogin = () => {
-//     dispatch(login(username, password));
-//   };
+  return (
+    <div className="login-container">
+      <div className="top1">
+        <div className="topP">
+          <Heading />
+        </div>
+        <div className="topP">
+          <Contact />
+        </div>
+      </div>
+      <div className="format">
+        <div style={{display:"flex", border:"solid", width:"50%", height:"70%"}}>
+        <div style={{backgroundColor:"rgb(201, 192, 177) ", display:"flex", alignItems:"flex-end", width:"50%", justifyContent:"center" }}><img src={Logo} alt="logo"/></div>
+      <form onSubmit={handleSubmit}>
+        <div className="form-group">
+          <label>Email:</label>
+          <input
+            type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+        </div>
+        <div className="form-group">
+          <label>Password:</label>
+          <input
+            type="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            required
+          />
+        </div>
+        <button type="submit">Login</button>
+      </form>
+      </div>
+      </div>
+    </div>
+  );
+};
 
-//   const handleLogout = () => {
-//     dispatch(logout());
-//   };
-
-//   useEffect(() => {
-//     if (isAuthenticated) {
-//       navigate('/'); // Redirect to homepage after login
-//     }
-//   }, [isAuthenticated, navigate]);
-
-//   return (
-//     <div>
-//       {isAuthenticated ? (
-//         <div>
-//           <h2>Welcome, {username}</h2>
-//           <button onClick={handleLogout}>Logout</button>
-//         </div>
-//       ) : (
-//         <div>
-//           <h2>Login</h2>
-//           <input
-//             type="text"
-//             placeholder="Username"
-//             value={username}
-//             onChange={(e) => setUsername(e.target.value)}
-//           />
-//           <input
-//             type="password"
-//             placeholder="Password"
-//             value={password}
-//             onChange={(e) => setPassword(e.target.value)}
-//           />
-//           <button onClick={handleLogin}>Login</button>
-//         </div>
-//       )}
-//     </div>
-//   );
-// };
-
-// export default Login;
+export default Login;

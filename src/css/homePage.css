@@ -3,7 +3,7 @@
 
   } */
 .content{
-    height: 70%;
+    height: 50%;
     width: 100%;
     background-color: rgb(201, 192, 177);
     
@@ -14,7 +14,7 @@
     color: rgb(31, 57, 35);
     font-size: 50px;
     word-wrap: break-word;
-    width: 39%;
+    width: 18%;
 }
 
 .logo{
@@ -26,10 +26,10 @@
 }
 .main{
     display: flex;
-    margin:7% 23%;
-    /* justify-content: space-evenly; */
+    
+ justify-content: center;
 }
-.table{
-    height: 50vh;
-    background-color: rgb(255, 249, 240);
+.TableContent{
+    height: 50%;
+    width: 100%;
 }

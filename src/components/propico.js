@@ -6,7 +6,7 @@ function Pro() {
     <>
       <button
         className="prop"
-        style={{ height: "25px", width: "25px" }} 
+        style={{ height: "40px", width: "40px" }} 
         onClick={() => history("/account")}
       >
         <img alt="profile"/>

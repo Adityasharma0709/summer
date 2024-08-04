@@ -22,7 +22,7 @@
   display: flex;
   align-items: center;
   gap:8px;
-  width:10%
+  width:15%
 }
 .prop{
   border: #000 solid 1px;
@@ -31,4 +31,58 @@
 .prop img{
   object-fit: cover;
   border-radius: 19px;
+}
+.temp{
+  border: solid #000 1px;
+}
+.table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.item {
+  cursor: pointer;
+  text-align: center;
+}
+
+.item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.description-page {
+  text-align: center;
+}
+
+.description-page img {
+  max-width: 100%;
+  height: auto;
+}
+.description-page {
+  text-align: center;
+  padding: 20px;
+}
+
+.description-page img {
+  max-width: 100%;
+  height: auto;
+}
+
+.care-guide {
+  margin-top: 20px;
+}
+
+.care-section {
+  margin-bottom: 20px;
+}
+
+.care-section h3 {
+  margin-bottom: 10px;
 }

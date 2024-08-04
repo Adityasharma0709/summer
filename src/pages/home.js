@@ -4,6 +4,7 @@ import "../css/universal.css";
 import "../css/button.css";
 import "../css/homePage.css";
 import Navigation from "../components/navigationBar";
+import Table from "../components/Table";
 function Home() {
   return (
     <>
@@ -21,8 +22,22 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="table">
-        
+      <div className="TableContent">
+        <div style={{ padding: "10px;" }}>
+          <h1
+            style={{
+              color: "rgb(31, 57, 35);",
+              fontSize: "35px",
+              fontWeight: "lighter",
+            }}
+          >
+            FEATURED PRODUCT
+          </h1>
+        </div>
+        <div  style={{display:'flex', alignItems:"center", justifyContent:"center", height:"100vh"}}>
+          <div style={{backgroundColor:"rgb(201, 192, 177)", height:"70%", width:"65%" }}>
+          </div>
+        </div>
       </div>
     </>
   );
