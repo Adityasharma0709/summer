@@ -1,0 +1,18 @@
+.topP{
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+    padding: 0 10px;
+    }
+    .format{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+.login-container{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    height: 100vh;
+}    
