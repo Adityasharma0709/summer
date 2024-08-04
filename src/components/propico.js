@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-
+import Logo from "../assests/1722788385688.jpg"
 function Pro() {
   const history = useNavigate();
   return (
@@ -9,7 +9,7 @@ function Pro() {
         style={{ height: "40px", width: "40px" }} 
         onClick={() => history("/account")}
       >
-        <img alt="profile"/>
+        <img src={Logo} alt="profile"/>
       </button>
     </>
   );

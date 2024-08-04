@@ -1,3 +1,4 @@
+
 .topP{
     display: flex;
     width: 50%;
@@ -16,3 +17,21 @@
     /* justify-content: center; */
     height: 100vh;
 }    
+input{
+    outline: none;
+    border: none;
+    background-color: rgb(217, 217, 217);
+    padding: 5px 10px;
+    font-size: 20px;
+    /* width: 88%; */
+}
+.form-content{
+    display: flex;
+    flex-direction: column;
+    /* margin: 14%; */
+    justify-content: center;
+    width: 50%;
+}
+.form-group{
+    margin:5px 20px;
+}
