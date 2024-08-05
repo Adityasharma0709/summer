@@ -1,0 +1,24 @@
+/* ProductList.css */
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+ /* Adjust spacing between items */
+ width: 90%;
+  }
+  
+  .product-item {
+    text-align: center;
+    border: solid  rgb(201, 192, 177);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    text-decoration: none;
+    color:black;
+  }
+  
+  .product-item img {
+    max-width: 100%;
+    height: auto;
+  }
+  

@@ -35,10 +35,6 @@ function Home() {
             FEATURED PRODUCT
           </h1>
         </div>
-        {/* <div  style={{display:'flex', alignItems:"center", justifyContent:"center", height:"100vh"}}>
-          <div style={{backgroundColor:"rgb(201, 192, 177)", height:"70%", width:"65%" }}>
-          </div>
-        </div> */}
          <ProductList/>
       </div>
     </>
