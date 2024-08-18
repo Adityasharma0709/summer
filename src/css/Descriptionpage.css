@@ -1,0 +1,31 @@
+.top1{
+    /* background-color: black; */
+    display: flex;
+    align-items: center;
+    height: 8vh;
+    width: 100%;
+    padding: 10px 0;
+}
+.topP{
+display: flex;
+width: 50%;
+justify-content: flex-end;
+padding: 0 10px;
+}
+.product-details{
+    padding: 0 10%;
+    height: 89dvh;
+    display: flex;
+    color: rgb(31, 57, 35);
+    width: 80%;
+}
+.pname{
+    font-size: 50px;
+    color: rgb(31, 57, 35);
+    font-weight: lighter;
+}
+.wlt{
+    padding: 5% 0;
+    display: flex;
+    justify-content: space-between;
+}
